@@ -8,7 +8,7 @@
     "@actions/github": "^4.0.0",
     "article-title": "^3.1.0",
     "is-url": "^1.2.4",
-    "node-fetch": "^2.6.0"
+    "node-fetch": "^2.6.1"
   },
   "devDependencies": {
     "@types/node": "^14.0.14"
