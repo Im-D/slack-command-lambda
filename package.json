@@ -4,16 +4,17 @@
   "description": "",
   "main": "handler.js",
   "dependencies": {
-    "@actions/core": "^1.2.4",
+    "@actions/core": "^1.2.6",
     "@actions/github": "^4.0.0",
     "article-title": "^3.1.0",
     "is-url": "^1.2.4",
-    "node-fetch": "^2.6.0"
+    "node-fetch": "^2.6.1"
   },
   "devDependencies": {
-    "@types/node": "^14.0.14"
+    "@types/node": "^14.11.2"
   },
   "scripts": {
+    "deploy": "sls deploy",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
