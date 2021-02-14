@@ -30,7 +30,7 @@ module.exports.contents = async event => {
     body: JSON.stringify(
       {
         message: 'successfully!',
-        url: bodyObj.text || '',
+        url: event.body || '',
       },
       null,
       2
