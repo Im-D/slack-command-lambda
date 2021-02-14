@@ -18,7 +18,7 @@ async function createNewContent({ user_name, text: targetUrl }) {
       throw Error('TOKEN is empty');
     }
 
-    const octokit = github.getOctokit(TOKEN);
+    const octokit = await github.getOctokit(TOKEN);
     const realURL = decodeURIComponent(targetUrl)
 
     // Get Our Repo README.md
@@ -35,7 +35,7 @@ async function createNewContent({ user_name, text: targetUrl }) {
     const newContent = Buffer.from(splitContent[0] + LinkLocTarget + '\n' + fileLinkContent + splitContent[1], 'utf8').toString('base64');
 
     // Update README
-    updateReadme(octokit, OWNER, REPO_NAME, TARGET_PATH, `:house: ${user_name} / ${contentTitle}`, newContent, sha)
+    await updateReadme(octokit, OWNER, REPO_NAME, TARGET_PATH, `:house: ${user_name} / ${contentTitle}`, newContent, sha)
   }
   catch (error) {
     core.setFailed(error.message);

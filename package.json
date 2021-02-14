@@ -1,7 +1,7 @@
 {
   "name": "slack-command-lambda",
-  "version": "0.0.1",
-  "description": "",
+  "version": "0.1.0",
+  "description": "slack command lambda repository",
   "main": "handler.js",
   "dependencies": {
     "@actions/core": "^1.2.6",
@@ -17,6 +17,6 @@
     "deploy": "sls deploy",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Im-D",
   "license": "MIT"
 }
