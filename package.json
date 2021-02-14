@@ -15,7 +15,7 @@
   },
   "scripts": {
     "deploy": "sls deploy",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "serverless invoke local --function contents"
   },
   "author": "Im-D",
   "license": "MIT"

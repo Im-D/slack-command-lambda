@@ -1,4 +1,4 @@
-service: slack-command-lambda
+service: slack-command-contents
 
 provider:
   name: aws
