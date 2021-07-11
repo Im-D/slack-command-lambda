@@ -7,6 +7,8 @@
     "@actions/core": "^1.2.6",
     "@actions/github": "^4.0.0",
     "article-title": "^3.1.0",
+    "axios": "^0.21.1",
+    "form-data": "^4.0.0",
     "is-url": "^1.2.4",
     "node-fetch": "^2.6.1"
   },
@@ -15,7 +17,7 @@
   },
   "scripts": {
     "deploy": "sls deploy",
-    "test": "serverless invoke local --function contents"
+    "test": "serverless invoke local --function contents --data '{\"body\": \"text=https://githubmemory.com/repo/SeonHyungJo/notion-site&user_name=SeonHyungJo\"}'"
   },
   "author": "Im-D",
   "license": "MIT"
