@@ -4,7 +4,7 @@
   "description": "slack command lambda repository",
   "main": "handler.js",
   "dependencies": {
-    "@actions/core": "^1.2.6",
+    "@actions/core": "^1.9.1",
     "@actions/github": "^4.0.0",
     "article-title": "^3.1.0",
     "axios": "^0.21.1",
